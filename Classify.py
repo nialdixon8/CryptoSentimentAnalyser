@@ -10,7 +10,7 @@ def classify(myReddit):
     sia = SentimentIntensityAnalyzer()
 
     myList = []
-    okay = reddit.subreddit(myReddit).top(limit=100)
+    okay = reddit.subreddit(myReddit).top(limit=1000)
     for x in okay:
         myList.append(x.title)
 
